@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.anujsheth.tipcalulator.MainActivity">
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="149dp"
+            android:layout_height="33dp"
+            android:text="Enter your Name"
+            android:id="@+id/nameId"
+            android:layout_row="0"
+            android:layout_column="0" />
+
+        <TextView
+            android:layout_width="129dp"
+            android:layout_height="39dp"
+            android:text="Enter the bill amount"
+            android:id="@+id/billId"
+            android:layout_row="1"
+            android:layout_column="0" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/enterNameId"
+            android:layout_row="0"
+            android:layout_column="6" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/enterBillAmtId"
+            android:layout_row="1"
+            android:layout_column="6" />
+
+        <TextView
+            android:layout_width="129dp"
+            android:layout_height="39dp"
+            android:text="Enter percentage"
+            android:id="@+id/percentId"
+            android:layout_row="2"
+            android:layout_column="0" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/enterPercentId"
+            android:layout_row="2"
+            android:layout_column="6" />
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ratingBar"
+            android:layout_row="3"
+            android:layout_column="6"
+            android:numStars="5" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calculate Tip"
+            android:id="@+id/CalcTipBtn"
+            android:layout_row="4"
+            android:layout_column="0" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clear"
+            android:id="@+id/ClrBtn"
+            android:layout_row="4"
+            android:layout_column="6" />
+
+        <Space
+            android:layout_width="20px"
+            android:layout_height="20px"
+            android:layout_row="5"
+            android:layout_column="0" />
+
+        <Space
+            android:layout_width="20px"
+            android:layout_height="20px"
+            android:layout_row="6"
+            android:layout_column="0" />
+
+        <Space
+            android:layout_width="20px"
+            android:layout_height="20px"
+            android:layout_row="7"
+            android:layout_column="0" />
+
+        <EditText
+            style="@style/AlertDialog.AppCompat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText"
+            android:layout_row="8"
+            android:layout_column="0"
+            android:text="Total Bill Amount"
+            android:background="#c7bfbf"
+            android:textColor="#e52020" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/idTotalBillAmount"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="#de1e1e"
+            android:textColor="#2b4ee9"
+            android:textSize="@dimen/abc_action_bar_content_inset_material"
+            android:layout_row="8"
+            android:layout_column="6" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="20px"
+            android:layout_row="9"
+            android:layout_column="0" />
+
+    </GridLayout>
+
+</RelativeLayout>
